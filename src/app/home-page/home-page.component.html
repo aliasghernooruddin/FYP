@@ -1,0 +1,60 @@
+<div class="app-header">
+</div>
+<!-- Application header ends -->
+
+<mat-grid-list cols="3">
+  <mat-grid-tile></mat-grid-tile>
+
+  <!-- Writing markup for login starts -->
+  <mat-grid-tile class='login-element'>
+    <div class="login-container">
+
+      <!-- Template Body starts -->
+      <div class="login-box-body">
+        <form autocomplete="on" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+          <!-- Markup for getting Username starts -->
+          <mat-grid-list cols="9" rowHeight="75px">
+            <mat-grid-tile [rowspan]="1" class="login-icon">
+              <mat-icon>lock</mat-icon>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="7">
+              <mat-form-field class="justifier">
+                <input formControlName="username" matInput placeholder="Username" text="text">
+              </mat-form-field>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <!-- Markup for getting Username ends -->
+
+          <!-- Markup for getting Password starts -->
+          <mat-grid-list cols="9" rowHeight="100px">
+            <mat-grid-tile [rowspan]="1" class="login-icon">
+              <mat-icon>remove_red_eye</mat-icon>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="7">
+              <mat-form-field class="justifier">
+                <input formControlName="password" matInput placeholder="Enter your password" type=password>
+              </mat-form-field>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <!-- Markup for getting Password ends -->
+
+          <button type="submit" mat-raised-button class="login-button">
+            <mat-icon>input</mat-icon> Admin Login
+          </button>
+          <br>
+          <br>
+          <br>
+        </form>
+        <button mat-raised-button (click)="loginTwitter()" class="login-button">
+          <mat-icon>input</mat-icon> User Login
+        </button>
+
+      </div>
+      <!-- Template Body ends -->
+
+    </div>
+  </mat-grid-tile>
+  <!-- Writing markup for login ends -->
+  <mat-grid-tile></mat-grid-tile>
+
+</mat-grid-list>
