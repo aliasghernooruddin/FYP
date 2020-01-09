@@ -1,0 +1,14 @@
+{
+	"racing": 0.6,
+	"formula": 0.4,
+	"car": 0.7,
+	"driver": 0.4,
+	"race": 0.5,
+	"motor": 0.4,
+	"grand": 0.9,
+	"prix": 0.4,
+	"lap": 0.4,
+	"track": 0.6,
+	"circle": 0.3,
+	"driving": 0.8	
+ }
